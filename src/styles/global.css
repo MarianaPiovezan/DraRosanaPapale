@@ -1,0 +1,76 @@
+/*****colors*****/
+
+:root {
+--primary: #FF8189;
+--secondary: #00B2E3;
+--text-color: #636569;
+--background: #F6F6F7;
+--background-alt: #E3F0F4;
+--background-secundary: #fff;
+--desability-color: #a1a1a1;
+}
+
+.swiper-pagination {
+ 
+}
+
+.swiper-wrapper{
+    width: 300px !important;
+}
+
+@media (min-width: 768px){
+    .swiper-wrapper{
+        width: 900px !important;
+    }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom:0;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--secondary);
+
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 2rem !important;
+
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: var(--desability-color);
+    transition: all 0.3s ease-in-out;
+    width: 0px !important;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    color: var(--secondary);
+}
+
+/*---------menu active-----*/
+
+.m-active{
+    border-bottom: 3px solid var(--secondary);
+}
+
+.nav-link{
+    color: var(--desability-color) !important;
+}
+
+/*---------tooltip---------*/
+
+.tooltip .tooltip-inner {
+    max-height: fit-content;
+    background: var(--primary);
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(var(--secondary), 0.08);
+    padding: 8px;
+    text-align: left;
+    
+  }
+
+  .tooltip.bottom .tooltip-arrow {
+    border-bottom: 5px solid #FF0000 !important;
+    
+    }
