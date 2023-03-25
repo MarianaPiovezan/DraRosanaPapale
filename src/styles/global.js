@@ -10,15 +10,16 @@ export const colors = {
   desability: "#a1a1a1"
 };
 
+
 export const GlobalStyle = createGlobalStyle`
     @font-face {
-        font-family: "Chillax" ;
-        src: url("./src/fonts/Chillax-Variable.ttf");
+        font-family: "John Mayer" ;
+        src: url("./src/fonts/JohnMayer.otf");
     }
 
     @font-face {
-        font-family: "OpenSans" ;
-        src: url("./src/fonts/OpenSans.ttf");
+        font-family: "Futura" ;
+        src: url("./src/fonts/FuturaPT.ttf");
     }
    
     a{
@@ -28,8 +29,8 @@ export const GlobalStyle = createGlobalStyle`
     *{
         margin:0;
         padding:0;
-        font-family: "OpenSans" , sans-serif;
-        font-size: 1rem;
+        font-family: "Futura" , sans-serif;
+        font-size: 1.075rem;
         text-decoration: none;
     }
     body{
