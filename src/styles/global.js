@@ -21,6 +21,11 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "Futura" ;
         src: url("./src/fonts/FuturaPT.ttf");
     }
+
+    :root{
+      --title: "John Mayer";
+
+    }
    
     a{
         text-decoration: none;
