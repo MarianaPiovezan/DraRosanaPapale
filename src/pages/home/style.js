@@ -27,7 +27,7 @@ export const TextContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-font-family: "Chillax";
+font-family: var(--title);
   font-weight: 700;
   font-size: 32px;
   width: 320px;
@@ -38,7 +38,7 @@ font-family: "Chillax";
 export const TextContent = styled.p`
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.075px;
   width: 350px;
   margin-bottom: 12px;
   line-height: 22px;

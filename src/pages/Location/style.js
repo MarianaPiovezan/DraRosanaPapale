@@ -25,7 +25,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
- font-family: "Chillax";
+ font-family: var(--title);
   font-weight: 700;
   font-size: 32px;
   width: 100%;
