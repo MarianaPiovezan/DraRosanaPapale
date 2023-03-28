@@ -15,7 +15,7 @@ export const ButtonContainer = styled.button`
         align-items: center;
         color: #fff;
         font-weight: 600;
-        font-size: 1rem;
+        letter-spacing: 1.5px;
     }
 
     img{
