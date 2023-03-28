@@ -23,7 +23,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     :root{
-      --title: "John Mayer";
+      --title: "John Mayer", sans-serif;
+      --text: "Futura" , sans-serif;
 
     }
    
@@ -35,7 +36,8 @@ export const GlobalStyle = createGlobalStyle`
         margin:0;
         padding:0;
         font-family: "Futura" , sans-serif;
-        font-size: 1.075rem;
+        font-size: 1.025rem;
+        letter-spacing: 0.8px;
         text-decoration: none;
     }
     body{
