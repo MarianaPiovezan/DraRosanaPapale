@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
     *{
         margin:0;
         padding:0;
-        font-family: "Futura" , sans-serif;
+        font-family: var(--text);
         font-size: 1.025rem;
         letter-spacing: 0.8px;
         text-decoration: none;

@@ -10,7 +10,6 @@ export const Row = styled.ul`
   padding-left: 0git ;
 
  li{
-    font-family: "Open Sans";
     font-weight:600;
     font-size: 16px;
     list-style: none;
