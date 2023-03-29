@@ -38,7 +38,6 @@ font-family: var(--title);
 export const TextContent = styled.p`
   font-style: normal;
   font-weight: 400;
-  font-size: 1.075px;
   width: 350px;
   margin-bottom: 12px;
   line-height: 22px;
