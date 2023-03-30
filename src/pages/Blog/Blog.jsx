@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import CardPost from "../../components/CardPost/CardPost";
 import { Container, Title, Section } from "./style";
 import mockData from "../../../src/__mocks__/data/index";
@@ -18,6 +16,35 @@ const Blog = () => {
     setData(mockData);
   }, [word]);
 
+  const settings = {
+    initialSlide: 0,
+    swipeToSlide: true,
+    dots: true,
+    infinite : false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    accessibility:true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          className: "center",
+          centerMode: true,
+          centerPadding: "40px",
+        }
+      }
+    ]
+  };
   return (
     <Section id="blog">
       <Container>
@@ -27,36 +54,13 @@ const Blog = () => {
           word={ word }
           onChange={ (e) => setWord(e.target.value.toLowerCase()) }
         />
-        <Swiper
-          slidesPerView={ 1 }
-          breakpoints={ {
-            [768]: {
-              slidesPerView: 2,
-              spaceBetween: 30,
-            },
-            [1020]: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-          } }
-
-          loop={ true }
-          navigation={ true }
-          pagination={ true }
-          mousewheel={ true }
-          keyboard={ true }
-          modules={ [Navigation, Pagination, Mousewheel, Keyboard] }
-        >
-          {data.filter(e => e.title.toLowerCase().includes(word) || e.content.toLowerCase().includes(word))
-            .map((el) => {
-              return (
-                <SwiperSlide key={ el.id }>
-                  <CardPost { ...el } />
-                </SwiperSlide>
-              );
-            })}
-          ;
-        </Swiper>
+        <Slider { ...settings }>
+          {data.map((el) => {
+            return (
+              <CardPost { ...el } key={ el.id } />
+            );
+          })}
+        </Slider>
       </Container>
     </Section>
   );
