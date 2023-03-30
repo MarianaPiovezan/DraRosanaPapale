@@ -13,7 +13,7 @@ const Blog = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    setData(mockData);
+    setData(mockData.filter(e => e.title.toLowerCase().includes(word.toLowerCase()) || e.content.toLowerCase().includes(word.toLowerCase()) ));
   }, [word]);
 
   const settings = {
