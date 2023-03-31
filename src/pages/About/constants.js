@@ -1,6 +1,6 @@
 export const titleSection = {
   titleFirstPart:"Sobre a",
-  titleSecondPart:"Dra. Rosana Papale",
+  titleSecondPart:"Dra. Rosanna Papale",
 };
 
 export const imageLabel = "Otorrinolaringologista | Cirurgia Plástica da Face CRM: 194.032/SP RQE:89.217";

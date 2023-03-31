@@ -9,7 +9,9 @@ const Footer = () => {
       <Container>
         <div>
           <Logo src={ LogoImg } />
-          <p>© Copyright 2022 Dra. Rosana Papele</p>
+          <p>CNPJ: 41.019.881/0001-70</p>
+          <br />
+          <p>© Copyright 2022 Dra. Rosanna Papele</p>
           <p>Todos os direitos reservados.</p>
         </div>
         <ul>
