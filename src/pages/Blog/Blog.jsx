@@ -9,11 +9,11 @@ import { titleSection } from "./constants";
 import Search from "../../components/Search/Search";
 
 const Blog = () => {
-  const [word, setWord] = useState("");
+  const [word, setWord] = useState(undefined);
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    setData(mockData.filter(e => e.title.toLowerCase().includes(word.toLowerCase()) || e.content.toLowerCase().includes(word.toLowerCase()) ));
+    setData(word ? mockData.filter(e => e.title.toLowerCase().includes(word.toLowerCase()) || e.content.toLowerCase().includes(word.toLowerCase()) ) : mockData);
   }, [word]);
 
   const settings = {
