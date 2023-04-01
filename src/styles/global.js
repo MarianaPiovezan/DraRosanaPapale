@@ -1,4 +1,6 @@
 import {createGlobalStyle} from "styled-components";
+import title from "../src/fonts/JohnMayer.woff";
+import text from"./src/fonts/FuturaPT.woff";
 
 export const colors = {
   primary: "#FF8189",
@@ -12,14 +14,17 @@ export const colors = {
 
 
 export const GlobalStyle = createGlobalStyle`
+
 @font-face {
         font-family: "John Mayer";
-        src: url("./src/fonts/JohnMayer.woff") format("woff");
+        src: local("John Mayer"), url(${title}) format("woff");
+        font-style: normal;
     }
 
     @font-face {
         font-family: "Futura";
-        src: url("./src/fonts/FuturaPT.woff") format("woff");
+        src: local("Futura"), url(${text}) format("woff");
+        font-style: normal;
 
     }
 
