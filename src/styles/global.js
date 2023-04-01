@@ -12,14 +12,15 @@ export const colors = {
 
 
 export const GlobalStyle = createGlobalStyle`
-    @font-face {
-        font-family: "John Mayer" ;
-        src: url("./src/fonts/JohnMayer.otf");
+@font-face {
+        font-family: "John Mayer";
+        src: url("./src/fonts/JohnMayer.ttf") format("truetype");
     }
 
     @font-face {
-        font-family: "Futura" ;
-        src: url("./src/fonts/FuturaPT.ttf");
+        font-family: "Futura";
+        src: url("./src/fonts/FuturaPT.otf") format("opentype");
+
     }
 
     :root{
