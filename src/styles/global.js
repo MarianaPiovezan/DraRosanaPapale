@@ -1,6 +1,4 @@
-import {createGlobalStyle} from "styled-components";
-import title from "../src/fonts/JohnMayer.woff";
-import text from"./src/fonts/FuturaPT.woff";
+import { createGlobalStyle } from "styled-components";
 
 export const colors = {
   primary: "#FF8189",
@@ -9,30 +7,27 @@ export const colors = {
   background: "#F6F6F7",
   backgroundAlt: "#E3F0F4",
   backgroundSecundary: "#fff",
-  desability: "#a1a1a1"
+  desability: "#a1a1a1",
 };
 
-
 export const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: "John Mayer";
+  src: local("John Mayer"), url("../fonts/JohnMayer.woff") format("woff");
+  font-style: normal;
+}
 
 @font-face {
-        font-family: "John Mayer";
-        src: local("John Mayer"), url(${title}) format("woff");
-        font-style: normal;
-    }
+  font-family: "Futura";
+  src: local("Futura"), url("../fonts/FuturaPT.woff") format("woff");
+  font-style: normal;
 
-    @font-face {
-        font-family: "Futura";
-        src: local("Futura"), url(${text}) format("woff");
-        font-style: normal;
-
-    }
-
-    :root{
-      --title: "John Mayer", sans-serif;
-      --text: "Futura" , sans-serif;
-
-    }
+}
+:root{
+/*****colors*****/
+  --title: "John Mayer", sans-serif;
+  --text: "Futura" , sans-serif;
+}
    
     a{
         text-decoration: none;
