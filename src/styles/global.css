@@ -1,6 +1,6 @@
 @font-face {
   font-family: "John Mayer";
-  src: local("John Mayer"), url("../fonts/JohnMayer.woff") format("truetype");
+  src: local("John Mayer"), url("../fonts/JohnMayer.woff") format("woff"), url("../fonts/JohnMayer.ttf") format("truetype");
   font-style: normal;
 }
 
