@@ -41,7 +41,6 @@ const Blog = () => {
           className: "center",
           centerMode: true,
           centerPadding: "40px",
-          initialSlide: 1,
         }
       }
     ]

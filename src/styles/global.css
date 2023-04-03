@@ -92,7 +92,9 @@
 /*--------carousel--------*/
 
 .slick-slider {
-  width: 100%;
+  display: table !important;
+  table-layout: fixed !important;
+  width: 100% !important;  
 }
 
 .slick-slide > div {
