@@ -1,5 +1,17 @@
+@font-face {
+  font-family: "John Mayer";
+  src: local("John Mayer"), url("../fonts/JohnMayer.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: local("Futura"), url("../fonts/FuturaPT.woff") format("woff");
+  font-style: normal;
+}
+
 :root {
-/*****colors*****/
+  /*****colors*****/
   --primary: #ff8189;
   --secondary: #00b2e3;
   --text-color: #636569;
@@ -7,6 +19,9 @@
   --background-alt: #e3f0f4;
   --background-secundary: #fff;
   --desability-color: #a1a1a1;
+  /*****fonts*****/
+  --title: "John Mayer", sans-serif;
+  --text: "Futura", sans-serif;
 }
 
 .swiper-pagination {

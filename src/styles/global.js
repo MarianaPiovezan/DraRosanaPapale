@@ -11,23 +11,7 @@ export const colors = {
 };
 
 export const GlobalStyle = createGlobalStyle`
-@font-face {
-  font-family: "John Mayer";
-  src: local("John Mayer"), url("../fonts/JohnMayer.woff") format("woff");
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "Futura";
-  src: local("Futura"), url("../fonts/FuturaPT.woff") format("woff");
-  font-style: normal;
-
-}
-:root{
-/*****colors*****/
-  --title: "John Mayer", sans-serif;
-  --text: "Futura" , sans-serif;
-}
    
     a{
         text-decoration: none;
